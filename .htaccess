@@ -1,0 +1,13 @@
+RewriteEngine On
+
+# Định nghĩa route tùy chỉnh
+RewriteRule ^Login$ frontend/auth/signin.php [L]
+RewriteRule ^Register$ frontend/auth/signup.php [L]
+RewriteRule ^Profile$ frontend/user/profile.php [L]
+RewriteRule ^HistoryAPI$ frontend/user/history_api.php [L]
+RewriteRule ^SearchAPI$ frontend/user/youtube.php [L]
+RewriteRule ^MusicAPI$ frontend/user/mp3.php [L]
+RewriteRule ^Home$ index.php [L]
+
+# Dữ liệu mp3 
+RewriteRule ^Data/(.*)$ app/youtube/downloads/$1 [L]

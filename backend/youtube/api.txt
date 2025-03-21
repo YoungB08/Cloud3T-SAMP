@@ -1,0 +1,5 @@
+1: Thành công
+90: Không có dữ liệu search
+95: Chưa input tìm kiếm
+98: API Key không tồn tại
+99: API chưa input
